@@ -1,0 +1,29 @@
+.form{
+  h3{
+    text-align: center;
+    font-weight: 200;
+    font-size: 40px;
+  }
+  form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 500px){
+      width: 500px;
+      margin: 0 auto;
+    }
+    input, textarea{
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: 13px;
+      padding: 10px 15px;
+      background: transparent;
+      border: 1px solid #AAAAAA;
+      border-radius: 10px;
+    }
+    textarea{
+      height: 200px;
+    }
+  }
+}
