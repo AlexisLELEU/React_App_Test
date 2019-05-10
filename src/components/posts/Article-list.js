@@ -68,8 +68,10 @@ class ArticleList extends Component {
       method: METHODS.delete
     })
 
+    const filterData = this.state.data.filter(item => item.id !== upd.id)
+
     this.setState({
-      data: [...this.state.data, filter[0]]
+      data: [...filterData, filter[0]]
     })
   }
 
