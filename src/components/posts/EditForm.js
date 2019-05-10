@@ -31,7 +31,10 @@ class ArticleList extends Component {
     .then(json => {
       this.props.edit(json);
     });
+    this.title.value=""
+    this.body.value=""
   }
+
 
   render() {
     return (

@@ -67,9 +67,7 @@ class ArticleList extends Component {
     fetch(`${API_URL}/posts/${upd.id}`, {
       method: METHODS.delete
     })
-
     const filterData = this.state.data.filter(item => item.id !== upd.id)
-
     this.setState({
       data: [...filterData, filter[0]]
     })
@@ -79,6 +77,12 @@ class ArticleList extends Component {
     this.setState({
       editId: id,
       isUpdate: true
+    })
+  }
+
+  _hiddenEdit = () => {
+    this.setState({
+      isUpdate: false
     })
   }
 
@@ -109,6 +113,7 @@ class ArticleList extends Component {
                   object={el}
                   onEdit={() => this._editArticle(el.id)}
                   onClick={() => this.handleClick(el.id)}
+                  hidden={()=>this._isUpdate}
                 />
               )
             })}

@@ -30,17 +30,23 @@ class AddPost extends Component {
       body: message
     }
 
-    fetch(`${API_URL}/posts`, {
-      method: METHODS.post,
-      body: JSON.stringify(body),
-      headers: {
-        "Content-type": CONTENT_TYPE
-      }
-    })
-    .then(response => response.json())
-    .then(json => {
-      return this.props.addArticle(json)
-    });
+    if (this.title.value === "" || this.body.value === "") {
+      return this.setState({
+        error: true
+      });
+    } else {
+      fetch(`${API_URL}/posts`, {
+        method: METHODS.post,
+        body: JSON.stringify(body),
+        headers: {
+          "Content-type": CONTENT_TYPE
+        }
+      })
+      .then(response => response.json())
+      .then(json => {
+        return this.props.addArticle(json)
+      });
+    }
   }
 
   render() {
