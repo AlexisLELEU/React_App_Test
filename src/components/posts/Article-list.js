@@ -56,8 +56,6 @@ class ArticleList extends Component {
 
   _updateArticle = upd => {
     const filter = this.state.data.filter(item => item.id === upd.id)
-    console.log(upd.id)
-    console.log(filter[0].id)
     if(upd.title){
       filter[0].title = upd.title
     }
