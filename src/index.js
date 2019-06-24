@@ -1,9 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import './style.scss'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import { store } from './configureStore'
+import App from './components/app'
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-serviceWorker.unregister();
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>
+  , document.querySelector('.container'))

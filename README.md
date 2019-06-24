@@ -1,8 +1,9 @@
+### ReactRedux-Starter ###
 
-#### `npm install`
+Pour installer le projet se placer dans le projet et lancer : 
 
-#### `npm start`
+```
+> npm install
+> npm start
+```
 
-#### `npm run build`
-
-To builds the app for production.
