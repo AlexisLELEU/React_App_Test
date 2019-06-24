@@ -83,9 +83,6 @@ h1{
     height:  200px;
 }
 
-
-
-
 @media screen and (min-width: 768px){
     .dataList{
         width: 768px;
@@ -93,8 +90,11 @@ h1{
   }
 
   @media screen and (min-width: 568px){
+   h1 {
     font-size: 40px;
+   }
   }
+
 
   @media screen and (min-width: 500px){
     .form form {
