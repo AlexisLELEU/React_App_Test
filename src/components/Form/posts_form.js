@@ -40,7 +40,6 @@ class PostForm extends Component {
     const { handleSubmit } = this.props
     return (
       <div className='formContainer'>
-        <h3>Bliink Test - Redux</h3>
        <form name={FORM.name} onSubmit={handleSubmit(this.handleSubmit)}>
           <Field
             name={FORM.title}

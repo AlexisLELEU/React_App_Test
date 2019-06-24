@@ -1,3 +1,4 @@
+export const PROJECT_TITLE = 'Bliink Test - Redux'
 export const API_URL = 'https://jsonplaceholder.typicode.com'
 export const LIMIT = '?_limit=10'
 export const METHODS = {

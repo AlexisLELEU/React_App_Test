@@ -1,3 +1,10 @@
+h1{
+    font-size: 30px;
+    color: #0984e3;
+    width: 100%;
+    text-align-last: center;
+}
+
 .dataList{
     list-style: none;
     width: 100%;
@@ -77,10 +84,16 @@
 }
 
 
+
+
 @media screen and (min-width: 768px){
     .dataList{
         width: 768px;
     }
+  }
+
+  @media screen and (min-width: 568px){
+    font-size: 40px;
   }
 
   @media screen and (min-width: 500px){
